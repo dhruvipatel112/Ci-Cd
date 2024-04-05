@@ -17,7 +17,7 @@ sudo -u postgres psql -c "GRANT ALL PRIVILEGES ON DATABASE sonarqube to sonar;"
 
 # Step 3: Download and Install SonarQube
 sudo apt-get install zip -y
-VERSION_NUMBER="replace_with_version_number" # specify the version number
+VERSION_NUMBER="10.4.1.88267" # specify the version number
 sudo wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-$VERSION_NUMBER.zip
 sudo unzip sonarqube-$VERSION_NUMBER.zip
 sudo mv sonarqube-$VERSION_NUMBER /opt/sonarqube
